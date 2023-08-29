@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+header h1{
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+form {
+    margin-bottom: 46px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 22px;
+    border: none;
+}
+
+input {
+    border-bottom: 1px solid ;
+}
+
+button {
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul li {
+    margin-bottom: 16px;
+    /*text-decoration: line-through;*/
+    cursor: pointer;
+}
