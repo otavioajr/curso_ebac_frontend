@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    display: block;
+    background-color: rgba(187, 255, 0, 0.562);
+    width: 100%;
+    max-width: 120px;
+    margin-top: 40px;
+}
