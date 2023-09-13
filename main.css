@@ -1,0 +1,14 @@
+body {
+    padding: 200px;
+}
+
+#cadastro label,
+#cadastro input {
+    width: 300px;
+}
+
+form #btn-form {
+    margin-top: 20px;
+    display: block;
+    width: 300px;
+}

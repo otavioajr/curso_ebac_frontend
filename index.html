@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./main.css">
+        <title>Exercício Bootstrap</title>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#cadastro" aria-pressed="false" autocomplete="off">Abrir cadastro</button>
+
+            <div id="cadastro" class="collapse collapse-horizontal">
+                <h1>Cadastro</h1>
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <label class="form-label" for="nome">Seu nome:</label>
+                            <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+                            <label class="form-label" for="email">E-mail:</label>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu E-mail" />
+                            <label class="form-label" for="telefone">Telefone:</label>
+                            <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" />
+                            <button id="btn-form" class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
