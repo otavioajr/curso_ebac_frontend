@@ -1,0 +1,98 @@
+@use 'config/reset.scss';
+@use 'config/variaveis';
+
+body {
+    background-color: variaveis.$corPrincipal;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: variaveis.$corCabecalho;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+        align-items: center;
+    }
+
+    .menu {
+
+        li {
+            display: inline;
+            font-weight: bold;
+            margin-left: 24px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;          
+        }
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    width: 100%;
+    column-gap: 1%;
+    row-gap: 4%;
+    margin-top: 40px;
+
+    .product-item {
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .product-button {
+        background-color: variaveis.$corBotao;
+        display: block;
+        padding: 8px 0;
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            background-color: lighten($color: variaveis.$corBotao, $amount: 10%);
+        }
+    }
+}
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
